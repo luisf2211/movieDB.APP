@@ -15,6 +15,8 @@ function CustomHeader(props) {
         type: "INSERTAR_PELICULAS_POPULARES",
         peliculas: data.data.results,
       });
+    }).catch((e) => {
+      console.error(`Ha ocurrido un error: ${e}`);
     })
   }
 
